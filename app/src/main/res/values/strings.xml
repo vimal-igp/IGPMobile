@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IGPMobile</string>
+    <string name="action_settings">Settings</string>
+    <string name= "app_base_url">
+        "https://gist.githubusercontent.com/shyam/55ed5f7a678f882ebfe1/raw/3f7614d3d7dd26cbaf624747608f464620102953/test.json";
+    </string>
+</resources>

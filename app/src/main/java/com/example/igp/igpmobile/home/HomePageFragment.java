@@ -13,9 +13,17 @@ import com.example.igp.igpmobile.R;
  * Created by vimal on 10/12/15.
  */
 public class HomePageFragment extends BaseFragment {
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return View.inflate(getActivity(), R.layout.fragment_home_page,null);
+    }
+
+    @Override
+    public void onResume() {
+        super.registerFragmentWithAnalytics("Home Page");
+        super.onResume();
     }
 }

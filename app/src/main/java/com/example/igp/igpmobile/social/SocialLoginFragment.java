@@ -10,6 +10,7 @@ import com.example.igp.igpmobile.common.BaseFragment;
  */
 public class SocialLoginFragment extends BaseFragment {
 
+
     protected void facebookSignInInitiate(){
 
     }

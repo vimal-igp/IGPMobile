@@ -22,7 +22,13 @@ public class ConnectWithSocialFragment extends SocialLoginFragment implements Vi
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setUpView(view);
+       // setUpView(view);
+    }
+
+    @Override
+    public void onResume() {
+        super.registerFragmentWithAnalytics("Social Login");
+        super.onResume();
     }
 
     @Override

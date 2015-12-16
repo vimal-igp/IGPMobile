@@ -1,7 +1,12 @@
 package com.example.igp.igpmobile;
 
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +36,6 @@ public class BaseActivity extends AppCompatActivity implements Response.Listener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         sqliteHelper = new SqliteHelper(this);
         networkManager = NetworkManager.newInstance(this);
 
@@ -66,6 +70,12 @@ public class BaseActivity extends AppCompatActivity implements Response.Listener
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id== R.id.notif_menu){
+            // notif logic
+        }
+        if(id== R.id.search_menu){
+            // search logic
+        }
         if (id == R.id.action_settings) {
             return true;
         }
@@ -79,6 +89,8 @@ public class BaseActivity extends AppCompatActivity implements Response.Listener
         return BaseFragment.getFragmentFromCurrentActivity(this);
     }
 
+
+    // ****************** NETWORK RESPONSE LISTENER ********************** //
     @Override
     public void onErrorResponse(Request request, VolleyError error) {
         Log.d(TAG, "VolleyError"+ error);
@@ -86,6 +98,7 @@ public class BaseActivity extends AppCompatActivity implements Response.Listener
 
     @Override
     public void onResponse(Request<JSONObject> request, JSONObject response) {
-        Log.d(TAG, "Response"+response);
+        Log.d(TAG, "Response" + response);
     }
+
 }

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/vimal/AndroidStudioProjects/igphub/android/IGPMobile/volley/assets"/></dataSet><dataSet config="release"><source path="/home/vimal/AndroidStudioProjects/igphub/android/IGPMobile/volley/build-types/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/vimal/IGP/igphub/android/IGPMobile/volley/assets"/></dataSet><dataSet config="release"><source path="/home/vimal/IGP/igphub/android/IGPMobile/volley/build-types/release/assets"/></dataSet></merger>

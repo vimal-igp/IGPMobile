@@ -20,6 +20,12 @@ android {
     }
 }
 
+repositories{
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
@@ -27,4 +33,5 @@ dependencies {
     compile 'com.android.support:design:22.2.1'
     compile project(':volley')
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
+    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
 }
